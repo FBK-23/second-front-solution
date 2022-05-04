@@ -1,0 +1,296 @@
+<div class="fade-in" >
+<!-- pic slide########################################"""""" -->
+<c-col xs="12">
+  
+    
+      
+        
+        
+  <c-carousel (itemChange)="onItemChange($event)" [interval]="1200" >
+    <c-carousel-inner >
+      <c-carousel-item *ngFor="let slide of slides[0]">
+        <img height="500px" 
+          [src]="slide.src"
+          
+          class="d-block w-100"
+          loading="lazy"
+        />
+        <c-carousel-caption class="d-none d-md-block">
+         <h3>{{slide.title}}</h3>
+        </c-carousel-caption>
+      </c-carousel-item>
+      
+    </c-carousel-inner>
+    <c-carousel-control [tabIndex]="0" direction="prev">
+      <svg cIcon name="cil-chevron-left" size="5xl"></svg>
+      <span class="visually-hidden">Previous</span>
+    </c-carousel-control>
+    <c-carousel-control [tabIndex]="0" direction="next">
+      <svg cIcon name="cil-chevron-right" size="5xl" ></svg>
+      <span class="visually-hidden">Next</span>
+    </c-carousel-control>
+  </c-carousel>
+
+
+
+
+</c-col>
+
+
+  <c-row ngPreserveBlackspaces>
+    
+<!-- our  story#########################################"""""" -->
+    <c-col xs="12"><br><br>
+      <c-card class="mb-4">
+        <c-card-body>
+              <h4 class="mb-32">Our story </h4>
+          <hr>
+          <br><br>
+                  <p>
+                    Our story started 3 months ago when our co-founders, aviation industry professionals, were confronted with 
+                    the difficult and time-consuming operation of having to inspect the upper fuselage of test aircraft.
+                </p>  <br><br>
+          
+                <p>They realised that visual inspection procedures had not evolved since the beginning of commercial aviation, requiring
+                      heavy equipment and putting workers at risk. There was a real opportunity to disrupt the way inspections 
+                      havebeen done for the past 40 years.
+                </p>
+                     <br><br>
+                <p>Validating market interest and technical feasibility, 
+                      <span style="color: blue;">TalanAir</span> was founded
+                        in 2022, leveraging our strong expertise in aircraft maintenance processes, designing aircraft structures, 
+                        drone robotics, automation and computer vision deep learning.Today we are a team of more than 5 and are 
+                        constantly 
+                        growing to deliver the best aircraft inspection solutions to our clients.
+                </p> 
+                    <br><br>
+                <p>
+                   <span style="color: blue;">TalanAir</span> is now the worldwide 
+                        leader of
+                         automated aircraft visual inspection based on drone technology, offering a unique solution combining a 
+                         100% 
+                         automated drone with advanced image analysis algorithms. 
+                </p><br><br>
+        </c-card-body>
+       
+      </c-card>
+    </c-col>
+
+
+<!-- our team #########################################"""""" -->
+    <c-col xs="12" >
+      <c-card class="mb-4" >
+        <c-card-body>
+          <h4 class="mb-32"> Our Team </h4>
+          <hr>
+          <br><br>
+          <p>Passionate, programmer, UAV expert, seller, athlete or not, geek or not, entrepreneur, marketer, aerospace experts, food lover, 
+            early bird or night owl, organised, visionary, innovator… it takes all kinds of personalities to build a
+             team.<br><br>We have complementary skills and various passions but one common objective:<br> deliver the best product for our customers
+              with the highest standards !
+
+        </p>
+          <br><br>
+          <c-row>
+
+
+
+<!-- team 1 #########################################"""""" -->
+<c-col>
+              <c-card class="mb-3" style="border-radius: 20px; background-color: rgba(228, 204, 204, 0.944);">
+                <img cCardImg="top" src="./assets/img/avatars/img.jpg" style="border-top-left-radius: 20px;border-top-right-radius: 20px;" height="380px">
+                <c-card-body>
+                  <h4 cCardTitle style="text-align:center; color:black;font-family: cursive;"> Engineer Firas Bargui</h4><br>
+                  <p cCardText >
+                    " Don’t think about name and fame, you can earn it if you have the excellence; 
+                    be determined and push your limitation always. Don’t stop your walk and go ahead.
+                     You end up gaining what you desire. "
+    
+                  </p>
+                  
+                  <div class="d-grid gap-2" style="text-align: center;">
+                  <a  href="https://www.linkedin.com/login/fr?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin">
+                    <button cButton color="warning" >LinkedIn </button> 
+                    
+                  </a>  
+                    </div>
+                </c-card-body>
+              </c-card>
+</c-col>
+
+<!-- team 2#########################################"""""" -->
+<c-col>
+  <c-card class="mb-3" style="border-radius: 20px; background-color: rgba(228, 204, 204, 0.944);">
+    <img cCardImg="top" src="./assets/img/avatars/drone.jpg" style="border-top-left-radius: 20px;border-top-right-radius: 20px;" height="380px">
+    <c-card-body>
+      <h4 cCardTitle style="text-align:center; color:black;font-family: cursive;"> Engineer Oussama BenZayed</h4><br>
+      <p cCardText >
+        " You have all the ability to win your race; think beyond your ability and have faith in you.
+         Believe in action more than your words and success will be all yours. "
+  
+      </p>
+      
+      <div class="d-grid gap-2">
+        <a style="text-align: center;" href="https://www.linkedin.com/login/fr?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin">
+          <button cButton color="warning" >LinkedIn</button>
+        </a> 
+        </div>
+    </c-card-body>
+  </c-card>
+</c-col>
+
+<!-- team 3#########################################"""""" -->
+<c-col>
+  <c-card class="mb-3" style="border-radius: 20px; background-color: rgba(228, 204, 204, 0.944);">
+    <img cCardImg="top" src="./assets/img/avatars/drone3.jpg" style="border-top-left-radius: 20px;border-top-right-radius: 20px;" height="380px">
+    <c-card-body>
+      <h4 cCardTitle style="text-align:center; color:black;font-family: cursive;">Engineer Amine Ferchichi</h4><br>
+      <p cCardText >
+        " Define the success with your hard work and dedication; don’t go after the achievements, 
+        instead make you desired and let the success will follow you; life has many things to give, you need to earn it. "
+      </p>
+      
+      <div class="d-grid gap-2">
+        <a style="text-align: center;" href="https://www.linkedin.com/login/fr?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin">
+          <button cButton color="warning" >LinkedIn</button>
+        </a> 
+        
+        </div>
+    </c-card-body>
+  </c-card>
+</c-col>
+
+</c-row>
+<!-- end team   #####################################--> 
+          
+          
+        </c-card-body>
+      </c-card>
+    </c-col>
+
+    
+
+
+
+  <!-- our values  #########################################"""""" -->
+    <c-col xs="12"><br><br>
+      <c-card class="mb-4">
+        <c-card-body>
+          <h4 class="mb-32">Our Values</h4>
+          <hr>
+  <br><br>
+  <h4 style="text-align: center ;color: black;">We are guided by 3 values which drive us to deliver the best to our customers every day.</h4>
+  <br><br>
+  <h1 >Innovation</h1>
+  <br>
+  <p>
+      This is in our DNA: <span style="color: blue;">TalanAir</span> was created to help our customers make aircraft maintenance 
+      more efficient and reliable.<br> We deliver cutting-edge technologies to meet and exceed our clients’ needs.
+       We constantly seek to develop new features on our products to offer the best solution to the market and keep
+        challenging ourselves.
+  </p>
+  <br><br><br><br>
+  
+  <h1 >Excellence</h1>
+  <br><br>
+  <p>
+      We aim for the highest standards in our work, our product and our relationship with customers and partners.
+       <br>We have set up several quality processes and are currently deploying ISO9001 quality standards.
+  </p> 
+  <br><br><br><br>
+  
+  <h1 >Team spirit</h1>
+  <br><br>
+  <p>
+      Nothing could be achieved without our team. We put great importance in team work and care about our people, 
+      leveraging the talent of each team member and working together to fulfil <span style="color: blue;">TalanAir</span>’s mission.
+      We believe in collaboration. <br>Because our customers are the ones facing the challenges of visual inspections 
+      every day, we also team up with our customers to exchange and co-develop futures functionalities based on new
+       use cases.  
+  </p> <br><br>
+  
+        </c-card-body>
+       
+      </c-card>
+    </c-col>
+
+
+<!-- they trust us    #########################################"""""" -->
+    <c-col xs="12">
+      <c-card class="mb-4">
+      
+        <c-card-body>
+          <h4 class="mb-32"> They Trust Us </h4>
+          <hr>
+          <br>
+  <p>
+       We are proud to work for a large number of customers from all walks of life who use <span style="color: blue;">TalanAir</span>'s solutions
+  </p>
+  <br>
+
+         
+            
+
+
+            <c-row [gutter]="4" class="mb-3" [md]="3" [xs]="1" >
+              <c-col *ngFor="let slide of slides[1]">
+                <c-card style="border-radius: 20px; background-color: rgba(228, 204, 204, 0.944);" >
+                  <img cCardImg="top" src="{{slide.src}}" height="290px" style="border-radius: 20px;">
+                  <c-card-body >
+                    <h4 cCardTitle style="text-align:center; color:black;font-family: cursive;"> {{slide.title[0]}}</h4><br>
+                    
+                    <p cCardText>" {{slide.subtitle}} "
+                    </p>
+
+                    <div class="d-grid gap-2" style="text-align: center;">
+                      <a  href="{{slide.title[1]}}">
+                        <hr>
+                        <br>
+                        <button cButton color="warning" >Visit Website </button> 
+                        
+                      </a>  
+                    </div>
+                    
+                  </c-card-body>
+                  
+                </c-card>
+              </c-col>
+            </c-row>
+          
+          
+
+
+
+
+
+
+
+
+            <!-- <c-carousel (itemChange)="onItemChange($event)" [interval]="1200" transition="slide" [wrap]="false">
+              <c-carousel-indicators></c-carousel-indicators>
+              <c-carousel-inner>
+                <c-carousel-item *ngFor="let slide of slides[1]">
+                  <img
+
+                    alt="{{slide.title}}"
+                    class="d-block w-100"
+                    loading="lazy"
+                    src="{{slide.src}}"
+                    
+                  />
+                  <c-carousel-caption class="d-none d-md-block">
+                    <h3>{{slide.title}}</h3>
+                    <p>{{slide.subtitle}}</p>
+                  </c-carousel-caption>
+                </c-carousel-item>
+              </c-carousel-inner>
+              <c-carousel-control [routerLink]="[]" caption="Previous" direction="prev" i18n-caption></c-carousel-control>
+              <c-carousel-control [routerLink]="[]" caption="Next" direction="next" i18n-caption></c-carousel-control>
+            </c-carousel>
+          
+        </c-card-body>
+      </c-card>
+    </c-col>
+    
+  </c-row>   
+</div>-->

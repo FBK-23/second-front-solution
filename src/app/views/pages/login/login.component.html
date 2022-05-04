@@ -1,0 +1,47 @@
+
+<div style="background-image: url(./assets/img/avatars/drone8.jpg);background-size: 100%;background-repeat: no-repeat ;">
+<div class=" min-vh-100 d-flex flex-row align-items-center" >
+  <c-container >
+    <c-row class="justify-content-center" >
+      <c-col md="8">
+        <c-card-group >
+          <c-card class="p-4" style="background-color: rgba(7, 74, 129, 0.595); border-radius: 50px;">
+            <c-card-body >
+              <form cForm  >
+                <h1 style="color: rgb(255, 255, 255) ; font-size: 50px;text-align: center;">Login</h1>
+                <p  style="color: rgb(255, 255, 255);text-align: center;">Sign In to your account</p>
+                <c-input-group class="mb-3">
+                  <span cInputGroupText>
+                    <svg cIcon name="cilUser"></svg>
+                  </span>
+                  <input autoComplete="username" cFormControl placeholder="Username" />
+                </c-input-group>
+                <c-input-group class="mb-4">
+                  <span cInputGroupText>
+                    <svg cIcon name="cilLockLocked"></svg>
+                  </span>
+                  <input
+                    
+                    cFormControl
+                    placeholder="Password"
+                    type="password"
+                  />
+                </c-input-group>
+                <c-row>
+                  <c-col xs="6" routerLink="./base/carousel">
+                    <button cButton class="px-4" color="primary">
+                      login
+                    </button>
+                  </c-col>
+                  
+                </c-row>
+              </form>
+            </c-card-body>
+          </c-card>
+          
+        </c-card-group>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>
+</div>

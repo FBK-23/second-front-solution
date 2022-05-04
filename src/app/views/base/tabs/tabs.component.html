@@ -1,0 +1,90 @@
+<c-row ngPreserveWhitespaces>
+  
+  <!-- #############  end inspection   bla bla ############################################################ --> 
+
+<c-col xs="12">
+ <c-card class="mb-4">
+   <c-card-body>
+         <h4 class="mb-32">Rapport - 3D model</h4>
+     <hr>
+     <br><br>
+   
+     <p class="text-medium-emphasis small">
+       Inspection drones are transforming manual inspection processes, 
+       allowing inspectors to speed up their collection of inspection data 
+       while removing slower manual steps that place them in danger.
+     </p>
+     <br><br>
+<br><br>
+    </c-card-body>
+ </c-card>
+</c-col>
+
+ <!-- #############    collect image ############################################################ -->
+ <c-col xs="12">
+  
+    
+      
+        
+        
+  <c-carousel (itemChange)="onItemChange($event)" >
+    <c-carousel-inner >
+      <c-carousel-item *ngFor="let slide of slides">
+        <img height="750px" 
+          [src]="slide.name"
+          
+          class="d-block w-100"
+          loading="lazy"
+        />
+        
+      </c-carousel-item>
+      
+    </c-carousel-inner>
+    <c-carousel-control [tabIndex]="0" direction="prev">
+      <svg cIcon name="cil-chevron-left" size="5xl"></svg>
+      <span class="visually-hidden">Previous</span>
+    </c-carousel-control>
+    <c-carousel-control [tabIndex]="0" direction="next">
+      <svg cIcon name="cil-chevron-right" size="5xl" ></svg>
+      <span class="visually-hidden">Next</span>
+    </c-carousel-control>
+  </c-carousel>
+
+  <br><br>
+
+
+</c-col>
+  <c-col xs="12">
+            <c-card class="mb-4">
+              <br>
+             <c-card-body xs="12">
+              <br>
+              <div class="d-grid gap-2">
+                
+                <button cButton color="success" size="lg" style="background-color:rgb(183, 201, 19);border: 0px;"> Download </button>
+              </div><br>
+             </c-card-body>
+      </c-card>
+ </c-col>
+
+
+ <c-col xs="12">
+  <c-card class="mb-4">
+    <br>
+   <c-card-body xs="12">
+    <br>
+    <div class="d-grid gap-2">
+      
+      <button cButton color="success" size="lg" style="background-color:#af03a68b;border: 0px;">3D Model </button>
+    </div><br>
+   </c-card-body>
+</c-card>
+</c-col>
+ 
+ 
+
+
+ 
+</c-row>
+
+     
